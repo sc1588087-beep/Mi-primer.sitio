@@ -40,8 +40,7 @@
                 margin: auto;
                 padding: 30px;
                 border-radius: 20px;
-                box-shadow: 0 10px 25px gray;
-                rgba(0,0,0,0.2);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.2);
             }
         img {
             width: 150px;
@@ -58,20 +57,87 @@
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
         }
-    
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg,#a8d0ff, #ffffff);
+            scroll-behavior: smooth;
+        }
+        /* Menu */
+        .menu {
+            background: royalblue;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        /* secciones */
+        section {
+            padding: 100px 20px;
+            margin-top: 60px;
+        }
+        /* boton */
+        button {
+            background-color: royalblue;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: darkblue;
+            transform: scale(1.1);
+        }
+        /* Imagen */
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 5px 15px gray;
+        }
+        .menu a:hover {
+            color: lightblue;
+        }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
+
+    <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre mi</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+
+
     <div class="contenedor">
+        <section id="inicio">
         <img src="https://static.vecteezy.com/system/resources/previews/009/098/472/non_2x/initial-c-logo-template-abstract-letter-c-logotype-trademarks-company-logo-illustration-vector.jpg" alt="Foto de Carlos">
 
     <h1>Bienvenidos a la página oficial de Carlos</h1>
 
-    <p>Estudiante de programación</p>
-    <h2>sobre mi</h2>
-    <p>Tengo 16 años y estoy aprendiendo programación.</p>
+    <h2>Carlos:</h2>
 
+    <p>Estudiante de programación.</p>
+    <p>Creador de sitios web y apps.</p>
+    <p>Edad: 16 años nivel de programador: principiante avanzado.</p>
+
+       </section> 
+
+        <section id="objetivos">
     <h2>Mis objetivos</h2>
     
     <ul>
@@ -81,11 +147,23 @@
         <li>Convertirme en desarrollador web profesional</li>
         <li>Crear aplicaciones útiles para las personas</li>
     </ul>
-<h2>contacto</h2>
-<p>Puedes contactarme a traves de mi numero de telefono: 7778-9684</p>
- <a href="#mas-sobre-mi">
-    <button>Conoce más sobre mí</button>
- </a>
+    </section>
+
+    <section id="contacto">
+    <h2>contacto</h2>
+
+    <p>Puedes contactarme a traves de mi numero de telefono: 7778-9684</p>
+     <a href="#mas-sobre-mi">
+        <button>Conoce más sobre mí</button>
+     </a>
+    </section>
+
+    <section id="sobre">
+    <h2>Sobre mí</h2>
+
+    <p>Me llamo Carlos y tengo 16 años y puedo crear sitios web y apps.</p>
+    </section>
+
     <h2 id="mas-sobre-mi">Más sobre mí</h2>
 
     <p>Hola, soy Carlos y tengo 16 años. Estudio programación y me gusta crear sitios web y apps.</p>
